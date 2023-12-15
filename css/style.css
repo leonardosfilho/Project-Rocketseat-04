@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* MÁGICA PARA O REM FICAR NA MEDIDA HAHAHA */
+    font-size: 62.5%;
+    /*10px*/
+
+
+}
+
+/* MOBILE FIRTS */
+/*TEM = Root EM*/
+body {
+
+    font-family: 'Epilogue', sans-serif;
+    background: var(--Bg_Light, #ECE9FD);
+    padding: 60px 23px 66px;
+}
+
+
+main {
+    max-width: 33.0rem;
+    margin: auto;
+}
+
+
+
+
+
+ul li {
+    vertical-align: auto;
+    margin-bottom: 3.2rem;
+    max-width: 25.7rem;
+    color: var(--Text_Dark, #090039);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* H4 */
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.2rem;
+    /* 133.333% */
+    list-style: none;
+    margin-top: 7.2rem;
+    display: flex;
+    align-items: center;
+    gap: 3.8rem;
+
+}
+
+ul li+li {
+
+    margin-top: 3.2rem;
+}
+
+ul span {
+
+    color: var(--Text_Dark, #090039);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* H1 */
+    font-size: 7.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 8.0rem;
+    /* 111.111% */
+    letter-spacing: -2px;
+
+}
+
+
+
+h1 {
+
+    color: var(--Text_Dark, #090039);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 4.0rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 4.8rem;
+    margin-bottom: 1.5rem;
+    /* 120% */
+}
+
+main p:first-child {
+    color: var(--Text_Dark_Accent, #7158EF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* H5 */
+    margin-bottom: 1.7rem;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.2rem;
+    /* 200% */
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+h1+p {
+    color: var(--Text_Dark_Gray, rgba(10, 0, 57, 0.64));
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.2rem;
+    margin-bottom: 3.2rem;
+}
+
+main a {
+    color: var(--Text_Dark, #090039);
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* Text */
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.2rem;
+    text-decoration: none;
+
+    /* 200% */
+}
+
+a:hover {
+
+    font-weight: bold;
+}
+
+
+/*media queries*/
+
+@media (min-width: 40em) {
+
+
+    body {
+        padding-top: 8rem;
+    }
+
+    main {
+
+        margin: auto;
+        max-width: 1020px;
+        display: flex;
+        justify-content: center;
+        gap: 10rem;
+
+    }
+
+    main>div {
+
+        max-width: 484px;
+    }
+
+    ul li {
+        gap: 5.3rem;
+        max-width: 400px;
+        align-items: center;
+    }
+
+    ul li+li {
+        margin-top: 3.2rem;
+    }
+}
